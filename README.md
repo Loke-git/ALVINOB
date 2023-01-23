@@ -13,7 +13,9 @@ Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om origi
 
 ## Bibliografisk format
 Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet blokk. Disse gruppene listes her i den rekkefølgen de forekommer i registreringsformularet. For Alvin kan blokken ha avvikende felt jf. tidligere "Ediffahpraksis".
+
 <details><summary>>>Les mer<<</summary>
+
   ### [Ressurstype](https://wiki.epc.ub.uu.se/display/alvininfo/Resurstyp)
   Definisjon: angir egenkaper og generell type av innhold for ressursen. Ressurstype er et obligatorisk element i Alvin, og må *alltid* velges før en ny post kan opprettes. Ressurstypen gjelder for originalversjonen av et objekt. **For digitaliserte versjoner refererer ressurstypen til den analoge originalen**.
 
@@ -673,6 +675,7 @@ Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet b
   ### [Verkslisensiering](https://wiki.epc.ub.uu.se/display/alvininfo/Licensiering+av+verket)
   Definisjon: lisensinformasjon for digitale verk som publiseres i Alvin. Mapping: ingen. Bruk tilgangsvilkår for MODS/MARC.
 </details>
+
 ## Autoritetsformatet
 
 ### []()
