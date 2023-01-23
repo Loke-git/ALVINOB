@@ -4,7 +4,7 @@ Oversatt av Loke Sjølie ved UiO for å lettere følge flyten i håndboken og fo
 Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om originalmaterialet har blitt oppdatert i etterkant; dette vil invalidere tidligere oversettelse.
 
 - Maskinoversettelse: N/A (alt er gjort manuelt)
-- Oversettelsesstatus bibliografisk format: ca. 70%
+- Oversettelsesstatus bibliografisk format: ca. 75%
 - Oversettelsesstatus autoritetsformat: 0%
 - Oversettelsesstatus annet: 0%
 - MODS-berikelse: N/A (gå gjennom, lenke hvert felt og underfelt til MODS)
@@ -436,18 +436,174 @@ Definisjon: et overordnet felt for referanser til litteratur som baseres på, ha
 
 </details>
 
-### [Anmerkninger](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462438)
+### [Noter](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462438)
 Definisjon: generell tekstinformasjon relatert til ressursen som ikke kan oppgis i andre felt. Mapping: MODS - note, MARC - 5XX.
 
 <details><summary>>>Les mer<<</summary>
 
   #### Attributter
-  - Type - identifiserer hvilken type anmerkning som oppgis. Velges fra en kontrollert liste i Alvin som bygger på MODS, MARC og EAD, pluss noen tillegg for mynt. Se tabell på den svenske siden for mer informasjon.
+  - Type - identifiserer hvilken type note som oppgis. Velges fra en kontrollert liste i Alvin som bygger på MODS, MARC og EAD, pluss noen tillegg for mynt. Se tabell på den svenske siden for mer informasjon.
 
-  #### Anmerkningsfelt i MARC med egne felt i Alvin
+  #### Notefelt i MARC med egne felt i Alvin
   - MARC 505 till Innehåll
   - MARC 506 till Åtkomstvillkor
   - MARC 563 till Bokband
+
+</details>
+
+### [Relaterte poster i Alvin](https://wiki.epc.ub.uu.se/display/alvininfo/Relaterade+poster+i+Alvin)
+Definisjon: en lenke til en annen post i Alvin. Mapping: MODS - relatedItem, MARC - 70X-75X, 76X-78X, 80X-83X, 841-88X. **For lenker til ressurser utenfor Alvin: se feltet Eksterne lenker (neste)**.
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt - Tittel
+  Mapping: MODS - titleInfo, MARC - 20X-24X.
+
+  Søk opp posten som skal lenkes ved å begynne å skrive inn tittelen i feltet. Velg da riktig tittel.
+
+  ##### Attributt - Del
+  Mapping: MODS - part
+
+  Kan brukes for å oppgi en spesifikk fysisk del i den relaterte posten. Anvendes framfor alt for bibliografiske referanser til andre poster i Alvin.
+
+  #### Felt - Nummer
+  Definisjon: nummerering eller annen betegnelse for den aktuelle delen. Kan også inneholde tekstinformasjon. Mapping: MODS - part/detail/.
+
+  Eksempel: 2, Del 2, eller Del 2: Bibliografi.
+
+  #### Felt - Omfang
+  Definisjon: omfanget av den aktuelle delen, for eksempel sidetall. Kan angis som intervall (eks. 2-5). Mapping: MODS - part/extent/.
+
+  ##### Attributt - Type
+  Velges fra et kontrollert vokabular i Alvin. Se siden på svensk for tabell.
+
+</details>
+
+### [Eksterne lenker](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462285)
+Definisjon: en URL til en ekstern ressurs av varig karakter utenfor Alvin. For lenker til andre poster i Alvin skal Relaterte poster i Alvin brukes istedenfor (se over). Mapping: MODS - location/url, MARC - 856.
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt - URL
+  Mapping: MODS - location/url, MARC - 856u.
+
+  En fullstendig URL. Eksempel: http://www.uu.se.
+
+  #### Felt - Beskrivelse
+  Mapping: MODS - location/url/@displaylabel, MARC - 856y.
+
+  En fritekstbeskrivelse av lenken som er interagerbar. Bør alltid oppgis. Eksempel: Uppsala universitet.
+
+  ##### Attributt - Type
+  Type relasjon. Velges fra et kontrollert vokabular i Alvin. Se siden på svensk for tabell.
+
+</details>
+
+### [Dokumenttype / Objektkategori / Handlingstype](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462397)
+Definisjon: termer som betegner en kategori som kjennetegner en viss stil, form eller innhold. Mapping: MODS - genre, MARC - 007, 008.
+
+<details><summary>>>Les mer<<</summary>
+
+  En mer spesifikk kategorisering av ressursens innhold er [Ressurstype](#ressurstype). Ukontrollerte termer eller termer som ikke finnes i listene legges i feltet Emneord (se neste) med typen genre/form.
+
+  Velges fra kontrollerte lister i Alvin som baserer seg på den generelle [MARC Genre Term List](http://www.loc.gov/standards/valuelist/marcgt.html) og lister fra diverse eldre svenske databaser.
+
+  Rubrikk og alternativ for feltet er koblet til ressurstype i Alvin.
+
+  #### Bok/manuskript
+  Rubrikk: dokumenttype. Eksempel: avhandling, bibliografi, brev eller tidsskrift.
+
+  #### Arkiv
+  Rubrikk: handlingstype. Eksempel: notater, dagbøker, fotografier eller manuskript. Listen hentes fra den tidligere databasen Ediffah.
+
+  #### Øvrige ressurstyper
+  Rubrikk: objektkategori. Eksempel: fotografi (bilde), mynt (formål), eller tale (lydinnspilling).
+
+  Se siden på svensk for utfyllende tabell.
+
+</details>
+
+### [Emneord](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462502)
+Definisjon: en term eller frase som beskriver de primære emnene en ressurs handler om. Mapping: MODS - subject, MARC - 6XX.
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt - Nøkkelord
+  Oppgi termen og koble til type og motsvarende *schema*. For ukontrollerte emneord oppgis intet *schema*.
+
+  ##### Attributt - Schema
+  Oppgir emneordsskjema. Tilgjengelige alternativ er [Humord](https://data.ub.uio.no/skosmos/humord/nb/), [ICSH](http://id.loc.gov/authorities/subjects.html), [LoB](http://www.ligatus.org.uk/lob/), [NAD](https://sok.riksarkivet.se/nad), [SAO](http://www.kb.se/katalogisering/Svenska-amnesord/) og [TGM2](http://www.kb.se/katalogisering/Svenska-amnesord/genrer-form/tesaurus/).
+
+  ##### Attributt - Type
+  Identifiserer hvilken type emneord som oppgis.
+
+  Se også [retningslinjer for indeksering med svenske emneord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf). Se siden på svensk for utfyllende tabell.
+
+</details>
+
+### [Klassifikasjon](https://wiki.epc.ub.uu.se/display/alvininfo/Klassifikation)
+Definisjon: en betegnelse som viser emnet for en ressurs ved å anvende et formelt system for koding og organisering av ressurser etter fagområder. Mapping: MODS - classification, MARC - 01X-09X.
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt - Klassifikasjon
+  Skriv inn koden og koble til det tilsvarende skjemaet.
+
+  Eksempel: Oa (kssb)
+
+  ##### Attributt - Schema
+  Klassifikasjonsskjema. Mulige alternativ er [DDK](http://www.kb.se/katalogisering/klassifikation/DDK/), [KSSB (SAB)](http://www.kb.se/katalogisering/Klassifikation/SAB/) og [Iconclass](http://www.iconclass.nl/home).
+
+</details>
+
+### [Del](https://wiki.epc.ub.uu.se/display/alvininfo/Del)
+Definisjon: kan anvendes for å oppgi spesifikk fysisk del av ressursen. Delposten blir vist direkte etter tittelinformasjon i visningsgrensesnittet. Mapping: MODS - part.
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt - Nummer
+  Nummerering eller annen betegnelse for den aktuelle delen. Kan også inneholde tekstinformasjon. Eksempel: 2, Del 2 eller Del 2: Bibliografi. Mapping: MODS - part/detail/.
+
+  #### Felt - Omfang
+  Definisjon: omfanget av den aktuelle delen, for eksempel sidetall. Kan angis som intervall (eks. 2-5). Mapping: MODS - part/extent/.
+
+  ##### Attributt - Type
+  Type av del. Velges fra et kontrollert vokabular i Alvin. Se siden på svensk for tabell.
+
+  #### Alternativ
+  Delinformasjon kan også oppgis i ustrukturert form rett i [Undertittel-feltet i Tittel](#felt---undertittel).
+
+  Kommentar om parsing av MODS: Man kan ha flera part-element som då bildar en lista i posten, men i varje del hämtas bara första detail och första extent om det finns mer än en.
+
+</details>
+
+### [Tilgjengelighet](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462339)
+Definisjon: informasjon om spesifikke lokale restriksjoner, regler eller spesielle prosedyrer pålagt av en arkivinstitusjon, giver, rettslig organ eller annen myndighet angående ressursen. Mapping: EAD - userestrict.
+
+<details><summary>>>Les mer<<</summary>
+
+  Anvendes først og fremst for arkivressurser. Disse begrensningene kan også være relaterte til reproduksjon, publisering eller sitering av den beskrevne ressursen etter at tilgang til ressursen er bevilget. Eksempel: Fram til 2027 er tillatelse til å kopiere materiale fra denne samlingen begrenset på forespørsel fra giveren.
+
+  #### Alternativ
+  For generelle begrensninger gjennom opphavsrett anvendes Tilgangsforhold.
+
+</details>
+
+### []()
+Definisjon: 
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt 
+
+</details>
+
+### []()
+Definisjon: 
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt 
 
 </details>
 
