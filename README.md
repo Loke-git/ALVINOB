@@ -12,7 +12,7 @@ Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om origi
 - Finkontrollert (for mindre feil): NEI, det kan forekomme noe upresise formuleringer og lignende i henhold til originalmaterialet. Sjekk originalen om du er usikker.
 
 ## Bibliografisk format
-Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet blokk. Disse gruppene listes her i den rekkefølgen de forekommer i registreringsformularet. For Alvin kan blokken ha avvikende felt jf. tidligere "Ediffahpraksis" (????).
+Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet blokk. Disse gruppene listes her i den rekkefølgen de forekommer i registreringsformularet. For Alvin kan blokken ha avvikende felt jf. tidligere "Ediffahpraksis".
 
 ### [Ressurstype](https://wiki.epc.ub.uu.se/display/alvininfo/Resurstyp)
 Definisjon: angir egenkaper og generell type av innhold for ressursen. Ressurstype er et obligatorisk element i Alvin, og må *alltid* velges før en ny post kan opprettes. Ressurstypen gjelder for originalversjonen av et objekt. **For digitaliserte versjoner refererer ressurstypen til den analoge originalen**.
