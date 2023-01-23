@@ -5,7 +5,7 @@ Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om origi
 
 - Maskinoversettelse: N/A
 - Oversettelsesstatus bibliografisk format: 100% manuelt
-- Oversettelsesstatus autoritetsformat: 0%
+- Oversettelsesstatus autoritetsformat: 33%
 - Oversettelsesstatus annet: 0%
 - MODS-berikelse: N/A (gå gjennom, lenke hvert felt og underfelt til MODS)
 - Grovkontrollert (for større feil): NEI, det kan forekomme større avvik fra originalmaterialet og konnotativ forståelse kan bli tapt mellom SV->NOB. Vær varsom!
@@ -20,24 +20,23 @@ Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet b
   Definisjon: angir egenkaper og generell type av innhold for ressursen. Ressurstype er et obligatorisk element i Alvin, og må *alltid* velges før en ny post kan opprettes. Ressurstypen gjelder for originalversjonen av et objekt. **For digitaliserte versjoner refererer ressurstypen til den analoge originalen**.
 
   <details><summary>>>Les mer<<</summary>
-    
-    I Alvin anvendes det et kontrollert vokabular for å beskrive ressurstyper. Dette er hentet fra MODS:
-    - Bok/manuskript (tekst): ressurs som er tekstbasert
-    - Kart: kartografisk materiale, herunder to- eller tredimensjonale kart, atlas, globuser, digitale kart, og andre kartografiske objekter
-    - Musikaler: trykk eller manuskript (tekst) som inneholder notert musikk
-    - Lyd (audio): opptak der lyd registreres på mekanisk eller elektrisk (digital) måte slik at lyden kan spilles av, herunder musikk og tale
-    - Bilde: todimensjonale bilder
-    - Video: opptak av bevegende bilder, med eller uten audio
-    - Gjenstand: tredimensjonelle gjenstander, enten kunstige/menneskapte (skulpturer, mynter, klær) eller naturlige
-    - Programvare: elektroniske ressurser som ikke faller under noen annen ressurstype, herunder programvare, nettsider, databaser eller numeriske data
-    - Blandet innhold: samlinger av ressurser som inneholder en blanding av øvrige ressurstyper
+  I Alvin anvendes det et kontrollert vokabular for å beskrive ressurstyper. Dette er hentet fra MODS:
+  - Bok/manuskript (tekst): ressurs som er tekstbasert
+  - Kart: kartografisk materiale, herunder to- eller tredimensjonale kart, atlas, globuser, digitale kart, og andre kartografiske objekter
+  - Musikaler: trykk eller manuskript (tekst) som inneholder notert musikk
+  - Lyd (audio): opptak der lyd registreres på mekanisk eller elektrisk (digital) måte slik at lyden kan spilles av, herunder musikk og tale
+  - Bilde: todimensjonale bilder
+  - Video: opptak av bevegende bilder, med eller uten audio
+  - Gjenstand: tredimensjonelle gjenstander, enten kunstige/menneskapte (skulpturer, mynter, klær) eller naturlige
+  - Programvare: elektroniske ressurser som ikke faller under noen annen ressurstype, herunder programvare, nettsider, databaser eller numeriske data
+  - Blandet innhold: samlinger av ressurser som inneholder en blanding av øvrige ressurstyper
 
-    I tillegg finnes det i Alvin en særskilt ressurstype:
-    - Arkiv: består av "handlinger" som "efter hand uppkommit" hos en institusjon eller person som følge av deres virksomhet
+  I tillegg finnes det i Alvin en særskilt ressurstype:
+  - Arkiv: består av "handlinger" som "efter hand uppkommit" hos en institusjon eller person som følge av deres virksomhet
 
-    Attributter
-    - Manuskript: en ressurs som er hånd- eller maskinskrevet
-    - Samling: en post som beskriver flere ulike objekter, for eksempel en bildesamling
+  Attributter
+  - Manuskript: en ressurs som er hånd- eller maskinskrevet
+  - Samling: en post som beskriver flere ulike objekter, for eksempel en bildesamling
   </details>
 
   ### [Tittel / alternativ tittel](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462059)
@@ -683,7 +682,108 @@ Definisjon: lisensinformasjon for digitale verk som publiseres i Alvin. Mapping:
 
 <details><summary>>>Les mer<<</summary>
 
-### [Personnavn inkl. slektsnavn]()
+### [Personnavn inkl. slektsnavn](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462563)
+Definisjon: navnet på en person eller slekt. Mapping: MADS - name/@type="personal", MARC - 100, 700.
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Autorisert navneform
+  Den autoriserte formen av navnet på en person eller slekt, som skapes etter [retningslinjene for autoritetsverk](https://metadatabyran.kb.se/auktoritetsarbete-och-agenter/riktlinjer-for-lopande-auktoritetsarbete-i-libris) (SV; Kungliga Biblioteket). For utforming av navneformer anvendes RDA. Særskilte retningslinjer med eksempler finnes for [Personer](https://metadatabyran.kb.se/auktoritetsarbete-och-agenter/personer) (SV; Metadatabyrån). MADS - authority, MARC - 100, 700.
+
+  #### Etternavn
+  En persons etternavn. Oppgis **ikke** for personer som sorteres alfabetisk på fornavn, som for eksempel monarker eller regenter. Mapping: MADS - name/@type="personal"/namepart@type="family", MARC 100a, 700a.
+
+  #### Slekt
+  Et slektsnavn. Oppgis dersom autoritetsposten beskriver slekt, og ikke person. Slektsnavnet oppgis da i feltet Etternavn. Mapping: MADS - name/@type="personal"/namepart , MARC - 100a, 700a.
+
+  #### Fornavn
+  Et fornavn. Mapping: MADS - name/type="personal"/namepart@type="given" , MARC - 100a, 700a.
+
+  #### Nummer
+  For regenter eller paver hvis navn er tilknyttet et romersk siffer. Mapping: MARC - 100b, 700b. Eksempel: Gustav (fornavn) VI Adolf (nummer) konge av Sverige (tillegg).
+
+  #### Tillegg
+  Titler eller andre tillegg som assosieres med navnet. Mapping: MADS - name/@type="personal"/namepart@type="termsOfAddress"  , MARC - 100c, 700c. Eksempel: konge av Norge, jarl, jr.
+
+  #### Livsperiode
+  En persons fødselsår/dato - dødsår/dato. Mapping: MADS - name/@type="personal"/namepart@type="date"  , MARC - 100d, 700d.
+
+  Feltet for fødselsdato er inndelt i delfelt for år, måned og dag. Kun tall kan brukes. Minustegnet kan anvendes for å legge til negative datoer (f.kr.).
+
+  Fødselssted (MARC 370a) kobles til autoritetsposter for steder i Alvin.
+
+  Feltet for dødsdato er inndelt i delfelt for år, måned og dag. Kun tall kan brukes. Minustegnet kan anvendes for å legge til negative datoer (f.kr.).
+
+  Dødssted (MARC 370b) kobles til autoritetsposter for steder i Alvin.
+
+  Fritekstfeltet *Levnadsperiod* gjør det mulig å nærmere beskrive usikre datoer eller annen informasjon som ikke kan uttrykkes via tall alene.
+
+  #### Alternative navneformer
+  Definisjon: alternative former av navnet på en person eller slekt. Anvendes for å registrere alternative navneformer til den autoriserte formen. Inneholder feltene Etternavn, Fornavn, Nummer og Tillegg. Flere alternative former kan oppgis. Mapping: MADS - variant, MARC - 400.
+
+  ##### Attributt - Type
+  Type av alternativt navn. Velges fra et kontrollert vokabular i Alvin.
+
+  #### Annen informasjon
+
+  ##### Felt - Yrke
+  Yrke eller ekspertiseområde der personen har vært engasjert. Mapping: MADS - fieldOfActivity, MARC - 372, 374.
+
+  ##### Felt - Nasjonalitet
+  Land personen er assosiert med. Aktuelle land velges fra et kontrollert vokabular i Alvin. Mapping: MADS - note, MARC - 370c.
+
+  ##### Felt - Kjønn
+  Informasjon om personens kjønn. Kontrollert vokabular (binært). Mapping: MADS - note, MARC - 375.
+
+  ##### Felt - Biografi
+  Biografisk sammenfatning om personen som beskrives i autoritetspersonen. Mapping: MADS - note, MARC - 678.
+
+  ##### Felt - Kilde
+  Mapping: MADS - note, MARC - 670.
+
+  ##### Felt - Note
+  Allmenn note som ikke kan legges i noe annet felt. Mapping: MADS - note, MARC - 680.
+
+  ##### Felt - Lenker
+  En URL til en ekstern ressurs utenfor Alvin assosiert med personen. Mapping: MADS - url, MARC - 856.
+  
+  ##### Felt - URL
+  En fullstendig URL. Mapping: MADS - url, MARC - 856u.
+
+  ###### Underfelt - Beskrivelse
+  En fritekstbeskrivelse av lenken som er interagerbar i grensesnittet. Bør alltid oppgis. Mapping: MADS - url, MARC - 856y.
+
+  ##### Felt - Identifikatorer
+  Unike standardnummer eller koder som anvendes globalt eller i andre systemer for å identifisere personen, henholdsvis Libris, CERL og VIAF. Mapping: MADS - identifier, MARC - 01X-09X.
+
+  ##### Felt - Relaterte personer
+  Person(er) som er assosiert med personen som beskrives i autoritetsposten. Mapping: MADS - related, MARC - 500.
+
+  ###### Underfelt - Navn
+  Søk på personnavn. Type relasjon angis ved behov i Biografi eller Note.
+
+  ##### Felt - Affiliasjon
+  En organisasjon som er assosiert med personen. Mapping: MADS - affiliation, MARC - 373.
+
+  ##### Underfelt - Navn
+  Søk på organisasjonsnavn. Type relasjon angis ved behov i Biografi eller Note.
+
+  #### Alvin-ID
+  Skapes automatisk. alvin-person:[database-ID], eksempelvis alvin-person:13036.
+
+</details>
+
+### [Organisasjonsnavn](https://wiki.epc.ub.uu.se/display/alvininfo/Organisationsnamn)
+Definisjon: 
+
+<details><summary>>>Les mer<<</summary>
+
+  #### Felt 
+  fjifae
+
+</details>
+
+### [Stedsnavn](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462638)
 Definisjon: 
 
 <details><summary>>>Les mer<<</summary>
