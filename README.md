@@ -1,5 +1,5 @@
 # Alvins formathåndbok på norsk
-Oversatt av Loke Sjølie ved UiO for å lettere følge flyten i håndboken og for å bli bedre kjent med input. Inneholder lenker til materialet på svensk for kontroll. Teksten er i markdown-format for å vises på GitHub og lignende. I første omgang refererer Alvins formathåndbok til deres grafiske nettbaserte brukergrensesnitt, og mangler da noe presisering for oversettelse til MODS og andre metadataskjema.
+Oversatt for å lettere følge flyten i håndboken og for å bli bedre kjent med input. Inneholder lenker til materialet på svensk for kontroll. Teksten er i markdown-format for å vises på GitHub og lignende. I første omgang refererer Alvins formathåndbok til deres grafiske nettbaserte brukergrensesnitt, og mangler da noe presisering for oversettelse til MODS og andre metadataskjema.
 
 Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om originalmaterialet har blitt oppdatert i etterkant; dette vil invalidere tidligere oversettelse.
 
