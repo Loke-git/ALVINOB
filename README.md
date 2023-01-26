@@ -4,12 +4,55 @@ Oversatt av Loke Sjølie ved UiO for å lettere følge flyten i håndboken og fo
 Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om originalmaterialet har blitt oppdatert i etterkant; dette vil invalidere tidligere oversettelse.
 
 - Maskinoversettelse: N/A
-- Oversettelsesstatus bibliografisk format: 100% manuelt
+- Oversettelsesstatus bibliografisk format: 100%
 - Oversettelsesstatus autoritetsformat: 100%
-- Oversettelsesstatus annet: 0%
+- Oversettelsesstatus annet: 15%
 - MODS-berikelse: N/A (gå gjennom, lenke hvert felt og underfelt til MODS)
 - Grovkontrollert (for større feil): NEI, det kan forekomme større avvik fra originalmaterialet og konnotativ forståelse kan bli tapt mellom SV->NOB. Vær varsom!
 - Finkontrollert (for mindre feil): NEI, det kan forekomme noe upresise formuleringer og lignende i henhold til originalmaterialet. Sjekk originalen om du er usikker.
+
+## Særegen praksis
+
+### Brev og brevsamlinger
+
+<details><summary>>>Les mer<<</summary>
+
+#### Roller for brev
+For *Avsender*, altså den som har skrevet brevet eller brevene: *Forfatter* iht. [MARC funksjonskoder](https://wiki.epc.ub.uu.se/display/alvininfo/Funktions-+och+relationskoder).
+
+For *Mottaker* av brevet eller brevene: *Mottaker av korrespondanse* iht. [MARC funksjonskoder](https://wiki.epc.ub.uu.se/display/alvininfo/Funktions-+och+relationskoder).
+
+#### Felt i Alvin for samlingsposter for brev (iht. brevdatabasemodellen)
+- Ressurstype: bok/manuskript samt manuskript og samlingspost krysset (?)
+- Tittel: konstruert tittel som nedenfor.
+- Person: kobling til autoritetsposter med rollene Forfatter eller Mottaker.
+- Tilgangsinformasjon: et årtall eller et tidsspenn.
+- Fysisk beskrivelse: format ikke digitalt / digitalt samt antall brev i Omfang. Eksempel: 2 brev.
+- Dokumenttype: Brev (spesifiseres alltid for å opprette en kontrollert inngang til alle brevposter).
+- Relaterte poster i Alvin: inngår i Post for Arkivet (lenke) hvis tilgjengelig.
+
+Dette er de feltene som alltid inkluderes i brevdatabasene. De kan eksempelvis suppleres med språk og sted (avsenders sted) i Alvin.
+
+#### Utforming av konstruert tittel for brevposter
+
+##### Samlingspost (korrespondanse)
+
+I henhold til KRS 4.1B2 skal den konstruerte tittelen være Korrespondanse (ikke brev) for en "samlingspost" som beskriver brev utvekslet mellom personer. Det samme fremgår av RDA 6.2.2.10.2.
+
+Tittelen i eksempeloppføringen ovenfor bør derfor være Korrespondanse med Karl August Hagson 1858-1916 i stedet for Brev til Karl August Hagson 1858-1916 i henhold til katalogiseringsreglene.
+
+Merk at en samling ofte bare består av ett brev, men det er et avvik vi kan leve med.
+
+Dersom samlingen kun består av en liten del av korrespondansen, legges Utvalg til som Undertittel i henhold til RDA 6.2.2.10.3. Eksempel: Korrespondanse med Karl August Hagson 1858-1916: Utvalg
+
+##### Enkeltbrev / gjenstand
+
+Beskriver man derimot kun et spesifikt brev (eller postkort, telegram osv.) som en enkeltgjenstand, er tittelen konstruert etter KRS 4.1B2 etter følgende mal:
+
+Brev (alternativt Postkort, Telegram etc.) ÅÅÅÅ-MM-DD, Avsenderens sted til Mottakers navn, Mottakers adresse. All tilgjengelig informasjonen er angitt.
+
+Eksempel: Brev 1874-01-31, Linköping til Karl August Hagson, Linköping
+</details>
 
 ## Bibliografisk format
 Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet blokk. Disse gruppene listes her i den rekkefølgen de forekommer i registreringsformularet. For Alvin kan blokken ha avvikende felt jf. tidligere "Ediffahpraksis".
