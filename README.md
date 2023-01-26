@@ -11,6 +11,17 @@ Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om origi
 - Grovkontrollert (for større feil): NEI, det kan forekomme større avvik fra originalmaterialet og konnotativ forståelse kan bli tapt mellom SV->NOB. Vær varsom!
 - Finkontrollert (for mindre feil): NEI, det kan forekomme noe upresise formuleringer og lignende i henhold til originalmaterialet. Sjekk originalen om du er usikker.
 
+## Om metadataformatet
+TBA
+
+### Struktur
+
+### Hva beskrives i Alvin?
+
+### Katalogiseringsregler
+
+### Minimumsnivå
+
 ## Særegen praksis
 
 ### Brev og brevsamlinger
@@ -53,6 +64,12 @@ Brev (alternativt Postkort, Telegram etc.) ÅÅÅÅ-MM-DD, Avsenderens sted til 
 
 Eksempel: Brev 1874-01-31, Linköping til Karl August Hagson, Linköping
 </details>
+
+### Bilder på proviniensbevis (?)
+TBA
+
+### Bokbindsregistrering
+TBA
 
 ## Bibliografisk format
 Det bibliografiske formatet omfatter et antall felt som grupperes i overordnet blokk. Disse gruppene listes her i den rekkefølgen de forekommer i registreringsformularet. For Alvin kan blokken ha avvikende felt jf. tidligere "Ediffahpraksis".
