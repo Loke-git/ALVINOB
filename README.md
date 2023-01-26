@@ -1,11 +1,11 @@
 # Alvins formathåndbok på norsk
-Oversatt for å lettere følge flyten i håndboken og for å bli bedre kjent med input. Inneholder lenker til materialet på svensk for kontroll. Teksten er i markdown-format for å vises på GitHub og lignende. I første omgang refererer Alvins formathåndbok til deres grafiske nettbaserte brukergrensesnitt, og mangler da noe presisering for oversettelse til MODS og andre metadataskjema.
+Oversatt av Loke Sjølie ved UiO for å lettere følge flyten i håndboken og for å bli bedre kjent med input. Inneholder lenker til materialet på svensk for kontroll. Teksten er i markdown-format for å vises på GitHub og lignende. I første omgang refererer Alvins formathåndbok til deres grafiske nettbaserte brukergrensesnitt, og mangler da noe presisering for oversettelse til MODS og andre metadataskjema.
 
 Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om originalmaterialet har blitt oppdatert i etterkant; dette vil invalidere tidligere oversettelse.
 
 - Maskinoversettelse: N/A
 - Oversettelsesstatus bibliografisk format: 100% manuelt
-- Oversettelsesstatus autoritetsformat: 33%
+- Oversettelsesstatus autoritetsformat: 100%
 - Oversettelsesstatus annet: 0%
 - MODS-berikelse: N/A (gå gjennom, lenke hvert felt og underfelt til MODS)
 - Grovkontrollert (for større feil): NEI, det kan forekomme større avvik fra originalmaterialet og konnotativ forståelse kan bli tapt mellom SV->NOB. Vær varsom!
@@ -174,10 +174,10 @@ Definisjon: matematiske data assosiert med kartografisk materiale. Mapping: MODS
   #### Felt - Koordinater
   Definisjon: informasjon om geografiske koordinater som omfattes av ressursen. Mapping: MODS - subject/cartographics/coordinates, MARC - 255c.
 
-  Koordinatene oppgis i følgende ordning: vestligste longitud - østligste longitud / nordligste latitud - sørligste latitud. Exempel: Ø 15°02'-Ø 15°12'/ N 57°45'-N 57°41'.
+  Koordinatene oppgis i følgende ordning: vestligste lengdegrad - østligste lengdegrad / nordligste breddegrad - sørligste breddegrad. Exempel: Ø 15°02'-Ø 15°12'/ N 57°45'-N 57°41'.
 </details>
 
-### Felt for musikalske verk
+### Felt spesifikt for musikalske verk
 <details><summary>>>Les mer<<</summary>
 
   ### [Toneart (musikalske verk)](https://wiki.epc.ub.uu.se/display/alvininfo/Tonart)
@@ -188,8 +188,7 @@ Definisjon: matematiske data assosiert med kartografisk materiale. Mapping: MODS
 
   Velges fra en kontrollert liste i Alvin. Eksempel: A-dur. Se den svenske siden for mer informasjon (tabell).
 
-  ### Medium (musikalske verk)
-  [Svenska](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462350)
+  ### [Medium (musikalske verk)](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462350)
   Definisjon: medium for framføring av musikalske verk. Mapping: MARC - 240m, 382.
 
   Feltet kan anvendes for å fullbyrde eller presisere det medium (stemme, instrument) som et musikast verk eller uttrykk er skrevet for eller oppført av. Posten kan anvendes for å skille ellers likelydende verk- eller uttrykkstitler.
@@ -198,16 +197,17 @@ Definisjon: matematiske data assosiert med kartografisk materiale. Mapping: MODS
 </details>
 
 ### [Opprinnelsesinformasjon](https://wiki.epc.ub.uu.se/display/alvininfo/Tillkomstinformation)
-Definisjon: informasjon om ressursens tilblivelse, herunder plass, utgiver og dato tilkoblet ressursen. Mapping: MODS - originInfo, MARC - 25X-28X.
+Definisjon: informasjon om ressursens tilblivelse, herunder plass, utgiver og dato tilkoblet ressursen. Fra Alvin-prat 26.01.2023 *Created* og *published* differensieres ikke i Alvin per i dag. Mapping: MODS - originInfo, MARC - 25X-28X.
 
 <details><summary>>>Les mer<<</summary>
+
   #### Felt - Utgave/opplag
   Definisjon: informasjon som identifiserer ulike versjoner av ressursen. Mapping: MODS - originInfo/edition, MARC - 250.
 
   Gjengi utgaveinformasjonen slik den forekommer i ressursen. Eksempel: 2. oppl., 3rd edition, Ny utgave
 
   #### Felt - År/dato
-  Definisjon: år eller dato da ressursen ble skapt eller publisert. Mapping: MODS - originInfo/dateIssued, alternativt originInfo/dateCreated (samme felt i Alvin), MARC - 260c, 008 07-10, 11-14.
+  Definisjon: år eller dato da ressursen ble skapt eller publisert. Mapping: MODS - originInfo/dateIssued, alternativt originInfo/dateCreated (samme felt i Alvin), MARC - 260c, 008 07-10, 11-14. OBS: MARC 264.
 
   Feltet er inndelt i delfelt for år, måned og dag. Kun tall kan oppgis i disse. Ved behov for "Før Kristus" (negative år), trykk på minussymbolet før feltet (-). Det er også mulig å oppgi et datospenn (fra-til). I tillegg finnes fritekstfiltet Vises som. Her er det mulig å presisere usikre dato eller annen informasjon som må uttrykkes med andre tegn enn tall.
 
@@ -219,12 +219,12 @@ Definisjon: informasjon om ressursens tilblivelse, herunder plass, utgiver og da
   Aktuelle land velges fra en kontrollert liste i Alvin med koder for land og autonome områder bestående av to eller tre tegn, se LC MARC Code List for Countries. Historiske land legges *suksessivt* inn i Alvin som et komplement til eksisterende land og velges deretter. Lenken til historiske land fungerer ikke pr 19.01.2023.
 
   #### Felt - Plass/sted
-  Definisjon: plass/sted der ressursen ble lagd eller publisert. Mapping: MODS - originInfo/place, MARC - 260a.
+  Definisjon: plass/sted der ressursen ble lagd eller publisert. Mapping: MODS - originInfo/place, MARC - 260a. OBS: MARC 264.
 
   Kobles til autoritetsposter for steder i Alvin. Dersom det aktuelle stedet ikke finnes i Alvin må den først registreres før kobling kan gjøres. Det er også mulig å oppgi at plass/sted er usikker.
 
   #### Felt - Forlag
-  Definisjon: navnet på den som har publisert, utgitt, trykt eller distribuert ressursen. Mapping: MODS - originInfo/publisher, MARC - 260b (for eldre trykk 260a, etter svensk? praksis).
+  Definisjon: navnet på den som har publisert, utgitt, trykt eller distribuert ressursen. Mapping: MODS - originInfo/publisher, MARC - 260b (for eldre trykk 260a, etter svensk? praksis). OBS: MARC 264.
 
   Her også avtrykk (eldre trykk).
 </details>
@@ -694,16 +694,16 @@ Definisjon: navnet på en person eller slekt. Mapping: MADS - name/@type="person
   En persons etternavn. Oppgis **ikke** for personer som sorteres alfabetisk på fornavn, som for eksempel monarker eller regenter. Mapping: MADS - name/@type="personal"/namepart@type="family", MARC 100a, 700a.
 
   #### Slekt
-  Et slektsnavn. Oppgis dersom autoritetsposten beskriver slekt, og ikke person. Slektsnavnet oppgis da i feltet Etternavn. Mapping: MADS - name/@type="personal"/namepart , MARC - 100a, 700a.
+  Et slektsnavn. Oppgis dersom autoritetsposten beskriver slekt, og ikke person. Slektsnavnet oppgis da i feltet Etternavn. Mapping: MADS - name/@type="personal"/namepart, MARC - 100a, 700a.
 
   #### Fornavn
-  Et fornavn. Mapping: MADS - name/type="personal"/namepart@type="given" , MARC - 100a, 700a.
+  Et fornavn. Mapping: MADS - name/type="personal"/namepart@type="given", MARC - 100a, 700a.
 
   #### Nummer
   For regenter eller paver hvis navn er tilknyttet et romersk siffer. Mapping: MARC - 100b, 700b. Eksempel: Gustav (fornavn) VI Adolf (nummer) konge av Sverige (tillegg).
 
   #### Tillegg
-  Titler eller andre tillegg som assosieres med navnet. Mapping: MADS - name/@type="personal"/namepart@type="termsOfAddress"  , MARC - 100c, 700c. Eksempel: konge av Norge, jarl, jr.
+  Titler eller andre tillegg som assosieres med navnet. Mapping: MADS - name/@type="personal"/namepart@type="termsOfAddress" , MARC - 100c, 700c. Eksempel: konge av Norge, jarl, jr.
 
   #### Livsperiode
   En persons fødselsår/dato - dødsår/dato. Mapping: MADS - name/@type="personal"/namepart@type="date"  , MARC - 100d, 700d.
@@ -778,18 +778,95 @@ Definisjon:
 
 <details><summary>>>Les mer<<</summary>
 
-  #### Felt 
-  fjifae
+  #### Autorisert navneform
+  Den autoriserte formen av navnet på en person eller slekt, som skapes etter [retningslinjene for autoritetsverk](https://metadatabyran.kb.se/auktoritetsarbete-och-agenter/riktlinjer-for-lopande-auktoritetsarbete-i-libris) (SV; Kungliga Biblioteket). For utforming av navneformer anvendes RDA. Særskilte retningslinjer med eksempler finnes for [Organisasjoner](https://metadatabyran.kb.se/auktoritetsarbete-och-agenter/organisationer) (SV; Metadatabyrån). MADS - authority, MARC - 110, 710.
+
+  #### Navn
+  En organisasjons navn. Mapping: MADS - name/@type="personal"/namepart@type="corporate", MARC 110a, 710a.
+
+  #### Underavdeling
+  En organisasjons underavdeling. Mapping: MADS - name/@type="personal"/namepart@type="corporate", MARC - 110b, 710b.
+
+  #### Tillegg
+  Annen relevant informasjon som assosieres med navnet, for eksempel land eller sted. Mapping: MADS - name/type="personal"/namepart@type="termsOfAddress", MARC - 110g, 710g.
+
+  #### Alternative navneformer
+  Definisjon: alternative former av navnet på en organisasjon. Anvendes for å registrere alternative navneformer til den autoriserte formen. Inneholder feltet Navn. Flere alternative former kan oppgis. Mapping: MADS - variant, MARC - 400.
+
+  ##### Attributt - Språk
+  Språk for alternativt navn. Velges fra et kontrollert vokabular i Alvin. Kombinér med type Oversettelse.
+
+  ##### Attributt - Type
+  Type av alternativt navn. Velges fra et kontrollert vokabular i Alvin.
+
+  #### Annen informasjon
+
+  ##### Felt - Identifikatorer
+  Unike standardnummer eller koder som anvendes globalt eller i andre systemer for å identifisere organisasjonen, henholdsvis Sigel/Libris og (svensk) Organisationskod. Mapping: MADS - identifier, MARC - 01X-09X.
+
+  ##### Felt - Historikk
+  Historisk sammenfatning om organisasjonen som beskrives i autoritetsposten. Mapping: MADS - note, MARC - 678.
+
+  ##### Felt - Kilde
+  Refererer til kilde der informasjon om organisasjonen finnes. Mapping: MADS - note, MARC - 670.
+
+  ##### Felt - Adresse
+  Adresse assosiert med organisasjonen. Mapping: MADS - affiliation/address, MARC - 371.
+
+  ##### Felt - Relaterte organisasjoner
+  Organisasjoner som er assosierte med organisasjonen som beskrives i autoritetsposten. Mapping: MADS - related, MARC - 500.
+  
+  ###### Underfelt - Navn 
+  Søkes opp i Alvin.
+
+  ###### Attributt - Relasjon
+  Type av relasjon. Velges fra en kontrollert liste i Alvin.
+
+  ##### Felt - Lenker
+  En URL til en ekstern ressurs assosiert med organisasjonen. Anvendes kun for lenker av varig karakter. Mapping: MADS - url, MARC - 856.
+
+  ##### Felt - URL
+  En fullstendig URL. Mapping: MADS - url, MARC - 856u.
+
+  ###### Underfelt - Beskrivelse
+  En fritekstbeskrivelse av lenken som er interagerbar i grensesnittet. Bør alltid oppgis. Mapping: MADS - url, MARC - 856y.
+
+  #### Alvin-ID
+  Skapes automatisk. alvin-organisation:[database-ID], t.ex. alvin-organisation:181.
 
 </details>
 
 ### [Stedsnavn](https://wiki.epc.ub.uu.se/pages/viewpage.action?pageId=27462638)
-Definisjon: 
+Definisjon: navnet på et sted eller en lokalitet.
 
 <details><summary>>>Les mer<<</summary>
 
-  #### Felt 
-  fjifae
+  #### Felt - Autorisert navneform
+  Den autoriserte [svenske] formen av navnet. Mapping: MADS - authority, MARC - 151, 751
+
+  #### Navn
+  Navnet på et sted eller en lokalitet. Mapping: MADS - geographic, MARC - 151a, 751a
+
+  #### Felt - Alternative navneformer
+  Alternative former av navnet på et sted. Anvendes for å registrere alternative navneformer av den autoriserte formen. Inneholder feltet Navn som motsvarer feltet i autorisert navneform. Flere alternativer kan oppgis. Mapping: MADS - variant, MARC - 400.
+
+  ##### Attributt - Språk
+  Språk for alternativt navn. Oppgis fra en kontrollert liste i Alvin.
+
+  #### Felt - Kart
+  Kartografisk data assosiert med stedet. Mapping: MARC - 034.
+
+  #### Felt - Land
+  Land assosiert med stedet. Velges fra en kontrollert liste i Alvin. Mapping: MADS - note, MARC - 370c.
+
+  #### Felt - Breddegrad
+  Breddegrad (latitude) assosiert med stedet. Mapping: MARC - 034.
+
+  #### Felt - Lengdegrad
+  Lengdegrad (longitude) assosiert med stedet. Mapping: MARC - 034.
+
+  #### Alvin-ID
+  Skapes automatisk. alvin-place:[database-ID], t.ex. alvin-place:672.
 
 </details>
 
