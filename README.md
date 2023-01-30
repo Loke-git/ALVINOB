@@ -6,13 +6,35 @@ Oversettelsen er oppdatert per januar 2023. Det anbefales å undersøke om origi
 - Maskinoversettelse: N/A
 - Oversettelsesstatus bibliografisk format: 100%
 - Oversettelsesstatus autoritetsformat: 100%
-- Oversettelsesstatus annet: 15%
+- Oversettelsesstatus annet: 27%
 - MODS-berikelse: N/A (gå gjennom, lenke hvert felt og underfelt til MODS)
 - Grovkontrollert (for større feil): NEI, det kan forekomme større avvik fra originalmaterialet og konnotativ forståelse kan bli tapt mellom SV->NOB. Vær varsom!
 - Finkontrollert (for mindre feil): NEI, det kan forekomme noe upresise formuleringer og lignende i henhold til originalmaterialet. Sjekk originalen om du er usikker.
 
+- Hva betyr rubrikk? Noen steder refererer dette til et *avsnitt*, og andre steder ser det ut som det kan referere til *avsnittets tittel*.
+
 ## Om metadataformatet
-TBA
+
+<details><summary>>>Les mer<<</summary>
+Det finnes to distinkte hovedtyper poster i Alvin:
+
+- Bibliografiske poster som beskriver en enkelt ressurs (tekst, bilde, kart osv.) eller en samling av ressurser (for eksempel arkiv).
+- Autoritetsposter som beskriver personer, slekter, organisasjoner og geografiske steder.
+
+Bibliografiske poster og autoritetsposter er lenket via en type relasjon (rolle). En bok kan knyttes til en forfatter via rollen "forfatter". Et arkiv kan knyttes til en person via rollen "arkivskaper".
+
+### Hierarkisk struktur, lenking og relasjoner
+
+Alvins metadataformat er også basert på lenkede data og beskriver forhold mellom ulike bibliografiske poster. Lenkingen kan være hierarkisk (inkludert i/del av), parallell (annen/t versjon/format) eller til en annen relatert post (som serie eller referanse).
+
+For arkivressurser og manuskriptvolumer er det en spesiell type hierarkisk innholdsfortegnelse modellert av hhv EAD og TEI-MS. Her kan en liste over inkluderte deler (komponenter) lages direkte under hovedelementet. DIsse komponentene er ikke selvstendige poster som for inngående deler for øvrige ressurstyper. (?)
+
+Les mer om Samlingsposter [Svensk](https://wiki.epc.ub.uu.se/display/alvininfo/Samlingsposter).
+
+I begge tilfeller kan relasjoner opprettes på flere nivåer i en trestruktur, slik at et komponent kan inneholde underliggende komponenter og relaterte poster flere relaterte poster i seg.
+
+![Image](https://wiki.epc.ub.uu.se/download/attachments/27461816/Namnl%C3%B6s.png)
+</summary>
 
 ### Struktur
 
